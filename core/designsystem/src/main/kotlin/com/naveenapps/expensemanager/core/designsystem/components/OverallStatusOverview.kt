@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.core.designsystem.components
+﻿package com.naveenapps.expensemanager.core.designsystem.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -123,7 +123,7 @@ fun PaymentStatusCard(
                 text = amount,
                 style = MaterialTheme.typography.headlineSmall.copy(
                     fontWeight = FontWeight.Black,
-                    letterSpacing = (-0.5).sp
+                    letterSpacing = 0.sp
                 ),
                 color = statusType.contentColor,
                 modifier = Modifier.padding(top = 8.dp),

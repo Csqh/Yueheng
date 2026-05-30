@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.transaction.list
+﻿package com.naveenapps.expensemanager.feature.transaction.list
 
 
 import androidx.compose.foundation.layout.Arrangement
@@ -283,7 +283,7 @@ fun TransactionHeaderItem(
                 text = date.fromCompleteDate().toDate(),
                 style = MaterialTheme.typography.headlineMedium.copy(
                     fontWeight = FontWeight.Bold,
-                    letterSpacing = (-0.5).sp,
+                    letterSpacing = 0.sp,
                 ),
                 color = MaterialTheme.colorScheme.onSurface,
             )
@@ -313,7 +313,7 @@ fun TransactionHeaderItem(
                 text = totalAmount,
                 style = MaterialTheme.typography.titleMedium.copy(
                     fontWeight = FontWeight.SemiBold,
-                    letterSpacing = (-0.3).sp,
+                    letterSpacing = 0.sp,
                 ),
                 color = colorResource(id = textColor),
             )

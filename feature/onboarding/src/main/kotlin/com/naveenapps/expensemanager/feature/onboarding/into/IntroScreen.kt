@@ -184,23 +184,27 @@ private fun ScaffoldContent(
                     modifier = Modifier.padding(bottom = 24.dp),
                     text = buildAnnotatedString {
                         val text = stringResource(id = R.string.privacy_text)
+                        val privacyKeyword = stringResource(id = R.string.privacy_policy)
+                        val privacyStart = text.indexOf(privacyKeyword)
                         append(text)
-                        addLink(
-                            url = LinkAnnotation.Url(
-                                url = "",
-                                linkInteractionListener = {
-                                    shareRepository?.openPrivacy()
-                                },
-                                styles = TextLinkStyles(
-                                    style = SpanStyle(
-                                        color = MaterialTheme.colorScheme.primary,
-                                        fontWeight = FontWeight.Medium,
+                        if (privacyStart >= 0) {
+                            addLink(
+                                url = LinkAnnotation.Url(
+                                    url = "",
+                                    linkInteractionListener = {
+                                        shareRepository?.openPrivacy()
+                                    },
+                                    styles = TextLinkStyles(
+                                        style = SpanStyle(
+                                            color = MaterialTheme.colorScheme.primary,
+                                            fontWeight = FontWeight.Medium,
+                                        ),
                                     ),
                                 ),
-                            ),
-                            start = text.indexOf("privacy policy"),
-                            end = text.length - 1,
-                        )
+                                start = privacyStart,
+                                end = privacyStart + privacyKeyword.length,
+                            )
+                        }
                     },
                     style = MaterialTheme.typography.bodySmall,
                     textAlign = TextAlign.Center,

@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.core.designsystem.components
+﻿package com.naveenapps.expensemanager.core.designsystem.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -55,7 +55,7 @@ private fun DeleteDialogContent(
             // Using your "Pro" weight for headers
             style = MaterialTheme.typography.headlineSmall.copy(
                 fontWeight = FontWeight.Black,
-                letterSpacing = (-0.5).sp
+                letterSpacing = 0.sp
             )
         )
 

@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.budget.list
+﻿package com.naveenapps.expensemanager.feature.budget.list
 
 import androidx.annotation.ColorRes
 import androidx.compose.foundation.background
@@ -189,7 +189,7 @@ fun BudgetItem(
                         text = amount.amountString ?: "",
                         style = MaterialTheme.typography.titleMedium.copy(
                             fontWeight = FontWeight.SemiBold,
-                            letterSpacing = (-0.3).sp,
+                            letterSpacing = 0.sp,
                         ),
                         color = MaterialTheme.colorScheme.onSurface,
                     )
@@ -287,7 +287,7 @@ fun DashBoardBudgetItem(
                 overflow = TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.titleMedium.copy(
                     fontWeight = FontWeight.SemiBold,
-                    letterSpacing = (-0.2).sp,
+                    letterSpacing = 0.sp,
                 ),
                 color = MaterialTheme.colorScheme.onSurface,
             )
@@ -304,7 +304,7 @@ fun DashBoardBudgetItem(
                     text = transactionAmount ?: "—",
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.Bold,
-                        letterSpacing = (-0.5).sp,
+                        letterSpacing = 0.sp,
                     ),
                     color = if (isOverBudget) {
                         MaterialTheme.colorScheme.error

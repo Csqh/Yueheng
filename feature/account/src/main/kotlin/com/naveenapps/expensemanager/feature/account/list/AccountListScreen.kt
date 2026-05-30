@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.account.list
+﻿package com.naveenapps.expensemanager.feature.account.list
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -283,7 +283,7 @@ fun DashBoardAccountItem(
                 color = amountTextColor,
                 style = MaterialTheme.typography.titleMedium.copy(
                     fontWeight = FontWeight.Bold,
-                    letterSpacing = (-0.3).sp,
+                    letterSpacing = 0.sp,
                 ),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,

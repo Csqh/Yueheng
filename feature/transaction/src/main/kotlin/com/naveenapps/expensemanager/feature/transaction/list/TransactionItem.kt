@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.transaction.list
+﻿package com.naveenapps.expensemanager.feature.transaction.list
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
@@ -252,7 +252,7 @@ fun TransactionItem(
                     style = MaterialTheme.typography.titleMedium.copy(
                         fontWeight = FontWeight.SemiBold,
                         fontSize = 15.sp,
-                        letterSpacing = (-0.3).sp,
+                        letterSpacing = 0.sp,
                     ),
                     color = amountColor,
                 )

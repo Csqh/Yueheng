@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.onboarding
+﻿package com.naveenapps.expensemanager.feature.onboarding
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -150,7 +150,7 @@ private fun OnboardingContentView(
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onSurface,
-                    letterSpacing = (-0.3).sp,
+                    letterSpacing = 0.sp,
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(

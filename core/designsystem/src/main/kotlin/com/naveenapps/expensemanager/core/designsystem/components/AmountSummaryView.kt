@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.core.designsystem.components
+﻿package com.naveenapps.expensemanager.core.designsystem.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -50,7 +50,7 @@ fun WidgetHeader(
             text = title,
             style = MaterialTheme.typography.titleMedium.copy(
                 fontWeight = FontWeight.SemiBold,
-                letterSpacing = (-0.2).sp,
+                letterSpacing = 0.sp,
             ),
             color = MaterialTheme.colorScheme.onSurface,
         )
@@ -151,7 +151,7 @@ fun AmountInfoWidget(
                     text = balanceAmount,
                     style = MaterialTheme.typography.titleMedium.copy(
                         fontWeight = FontWeight.Bold,
-                        letterSpacing = (-0.3).sp,
+                        letterSpacing = 0.sp,
                     ),
                     color = MaterialTheme.colorScheme.onSurface,
                 )
@@ -206,7 +206,7 @@ private fun SummaryCard(
             text = amount,
             style = MaterialTheme.typography.titleMedium.copy(
                 fontWeight = FontWeight.Bold,
-                letterSpacing = (-0.3).sp,
+                letterSpacing = 0.sp,
             ),
             color = tintColor,
             maxLines = 1,
@@ -334,7 +334,7 @@ private fun CompactAmountCell(
             text = amount,
             style = MaterialTheme.typography.bodyMedium.copy(
                 fontWeight = FontWeight.Bold,
-                letterSpacing = (-0.3).sp,
+                letterSpacing = 0.sp,
             ),
             color = tintColor,
             maxLines = 1,
@@ -370,7 +370,7 @@ private fun CompactBalanceCell(
             text = amount,
             style = MaterialTheme.typography.bodyMedium.copy(
                 fontWeight = FontWeight.Bold,
-                letterSpacing = (-0.3).sp,
+                letterSpacing = 0.sp,
             ),
             color = MaterialTheme.colorScheme.onSurface,
             maxLines = 1,

@@ -3,6 +3,7 @@
     <string name="welcome_message_title">记录每一笔收支</string>
     <string name="welcome_message_description">清楚掌握日常花销和收入变化</string>
     <string name="privacy_text">你的数据会保存在本机，也可以选择外部备份。继续使用即表示你同意隐私政策。</string>
+    <string name="privacy_policy">隐私政策</string>
     <string name="currency">货币</string>
     <string name="select_main_currency">选择主货币</string>
     <string name="add_new">新增</string>

@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.analysis
+﻿package com.naveenapps.expensemanager.feature.analysis
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -261,7 +261,7 @@ private fun AverageRow(
             text = income,
             style = MaterialTheme.typography.bodyMedium.copy(
                 fontWeight = FontWeight.SemiBold,
-                letterSpacing = (-0.3).sp,
+                letterSpacing = 0.sp,
             ),
             color = incomeColor,
             textAlign = TextAlign.End,
@@ -271,7 +271,7 @@ private fun AverageRow(
             text = expense,
             style = MaterialTheme.typography.bodyMedium.copy(
                 fontWeight = FontWeight.SemiBold,
-                letterSpacing = (-0.3).sp,
+                letterSpacing = 0.sp,
             ),
             color = expenseColor,
             textAlign = TextAlign.End,

@@ -1,4 +1,4 @@
-package com.naveenapps.expensemanager.feature.category.transaction
+﻿package com.naveenapps.expensemanager.feature.category.transaction
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -78,7 +78,7 @@ fun CategoryTransactionItem(
                     text = amount,
                     style = MaterialTheme.typography.titleMedium.copy(
                         fontWeight = FontWeight.SemiBold,
-                        letterSpacing = (-0.3).sp,
+                        letterSpacing = 0.sp,
                     ),
                     color = MaterialTheme.colorScheme.onSurface,
                 )
@@ -154,7 +154,7 @@ fun CategoryTransactionSmallItem(
             text = amount,
             style = MaterialTheme.typography.labelMedium.copy(
                 fontWeight = FontWeight.Medium,
-                letterSpacing = (-0.2).sp,
+                letterSpacing = 0.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             ),
         )
