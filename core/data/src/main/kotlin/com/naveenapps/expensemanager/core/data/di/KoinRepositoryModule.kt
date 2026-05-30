@@ -49,7 +49,6 @@ val RepositoryModule = module {
     }
     single<AnalyticsRepository> {
         AnalyticsRepositoryImpl(
-            firebaseAnalytics = get(),
             devicePropertyRepository = get()
         )
     }
@@ -75,7 +74,7 @@ val RepositoryModule = module {
     }
     single<DevicePropertyRepository> { DevicePropertyRepositoryImpl(androidContext()) }
     single<FeedbackRepository> { FeedbackRepositoryImpl(feedbackDataStore = get()) }
-    single<FirebaseSettingsRepository> { FirebaseSettingsRepositoryImpl(firebaseRemoteConfig = get()) }
+    single<FirebaseSettingsRepository> { FirebaseSettingsRepositoryImpl() }
     single<VersionCheckerRepository> { VersionCheckerRepositoryImpl() }
 
     single<AccountRepository> {

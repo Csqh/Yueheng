@@ -8,6 +8,7 @@ import com.naveenapps.expensemanager.core.domain.usecase.budget.GetBudgetsUseCas
 import com.naveenapps.expensemanager.core.domain.usecase.settings.currency.GetCurrencyUseCase
 import com.naveenapps.expensemanager.core.domain.usecase.settings.currency.GetFormattedAmountUseCase
 import com.naveenapps.expensemanager.core.domain.usecase.settings.filter.daterange.GetDateRangeUseCase
+import com.naveenapps.expensemanager.core.domain.usecase.transaction.GetCarryoverBalanceUseCase
 import com.naveenapps.expensemanager.core.domain.usecase.transaction.GetTransactionGroupByCategoryUseCase
 import com.naveenapps.expensemanager.core.domain.usecase.transaction.GetTransactionWithFilterUseCase
 import com.naveenapps.expensemanager.core.model.AccountType
@@ -37,6 +38,7 @@ class DashboardViewModel(
     getAllAccountsUseCase: GetAllAccountsUseCase,
     getTransactionGroupByCategoryUseCase: GetTransactionGroupByCategoryUseCase,
     getBudgetsUseCase: GetBudgetsUseCase,
+    getCarryoverBalanceUseCase: GetCarryoverBalanceUseCase,
     appCoroutineDispatchers: AppCoroutineDispatchers,
     getDateRangeUseCase: GetDateRangeUseCase,
     private val appComposeNavigator: AppComposeNavigator
@@ -65,7 +67,8 @@ class DashboardViewModel(
             getTransactionWithFilterUseCase.invoke(),
             getAllAccountsUseCase.invoke(),
             getDateRangeUseCase.invoke(),
-        ) { currency, transactions, accounts, dateRange ->
+            getCarryoverBalanceUseCase.invoke(),
+        ) { currency, transactions, accounts, dateRange, carryoverBalance ->
 
             val filteredTransactions = (transactions?.map {
                 it.toTransactionUIModel(
@@ -114,7 +117,7 @@ class DashboardViewModel(
                             currency,
                         ).amountString.orEmpty(),
                         balance = getFormattedAmountUseCase.invoke(
-                            (incomeValue - expenseValue),
+                            carryoverBalance + incomeValue - expenseValue,
                             currency,
                         ).amountString.orEmpty(),
                     ),

@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -7,16 +6,15 @@ plugins {
 
 group = "com.naveenapps.buildlogic"
 
-// Configure the build-logic plugins to target JDK 19
-// This matches the JDK used to build the project, and is not related to what is running on device.
+// Keep build-logic compatible with the local Android toolchain.
 java {
-    sourceCompatibility = JavaVersion.VERSION_19
-    targetCompatibility = JavaVersion.VERSION_19
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 tasks.withType<KotlinCompile>().configureEach {
     compilerOptions {
-        jvmTarget = JvmTarget.JVM_19
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 

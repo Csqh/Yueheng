@@ -25,10 +25,6 @@ dependencies {
     implementation(libs.opencsv)
     implementation(libs.gson)
 
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.config)
-    implementation(libs.firebase.analytics)
-
     implementation(libs.androidx.dataStore.preference)
     implementation(libs.backup.restore)
 

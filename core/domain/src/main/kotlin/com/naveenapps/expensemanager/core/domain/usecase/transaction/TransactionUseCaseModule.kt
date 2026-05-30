@@ -67,5 +67,14 @@ val TransactionUseCaseModule = module {
             transactionRepository = get()
         )
     }
+    single {
+        GetCarryoverBalanceUseCase(
+            accountRepository = get(),
+            categoryRepository = get(),
+            settingsRepository = get(),
+            getDateRangeUseCase = get(),
+            transactionRepository = get()
+        )
+    }
     single { UpdateTransactionUseCase(get()) }
 }

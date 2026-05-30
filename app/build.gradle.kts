@@ -1,7 +1,5 @@
 import com.github.triplet.gradle.androidpublisher.ReleaseStatus
-import com.google.firebase.appdistribution.gradle.firebaseAppDistribution
 import java.io.FileInputStream
-import java.util.Locale
 import java.util.Properties
 
 plugins {
@@ -11,9 +9,6 @@ plugins {
     id("naveenapps.plugin.compose")
     id("naveenapps.plugin.di")
     id("com.github.triplet.play")
-    id("com.google.gms.google-services")
-    id("com.google.firebase.crashlytics")
-    id("com.google.firebase.appdistribution")
     alias(libs.plugins.compose.compiler)
 }
 
@@ -38,11 +33,6 @@ fun getKeystoreFile(): File {
 fun getPlayStorePublisherFile(): File {
     val playStorePublisherFile = "$keysFolderPath/play_publish.json"
     return File(playStorePublisherFile)
-}
-
-fun getFirebasePublisherFile(): File {
-    val firebasePublishJson = "$keysFolderPath/firebase_distribution_service_account.json"
-    return File(firebasePublishJson)
 }
 
 val credentials = getCredentialsFile()
@@ -93,60 +83,12 @@ if (playStorePublisher.exists()) {
     println("----- Publisher not available -----")
 }
 
-val firebasePublisher = getFirebasePublisherFile()
-if (firebasePublisher.exists()) {
-    println("----- Firebase Distribution Publisher available -----")
-    println("----- ${firebasePublisher.absolutePath} -----")
-    var firebaseDistGroups = System.getenv()["FIREBASE_DISTRIBUTION_GROUPS"]
-    if (firebaseDistGroups.isNullOrBlank()) {
-        firebaseDistGroups = "testers"
-    }
-
-    android {
-        buildTypes {
-            debug {
-                firebaseAppDistribution {
-                    serviceCredentialsFile = firebasePublisher.absolutePath
-                    releaseNotes = "Nothing for now"
-                    groups = firebaseDistGroups
-                }
-            }
-            release {
-                firebaseAppDistribution {
-                    serviceCredentialsFile = firebasePublisher.absolutePath
-                    releaseNotes = "Nothing for now"
-                    groups = firebaseDistGroups
-                }
-            }
-        }
-
-        /**
-         * Our APK path leads to our universal APK file - do guarantee that it's present we need to
-         * make the distribution task depend on the universal APK assembly task.
-         */
-        applicationVariants.all { variant ->
-            variant.outputs.forEach { output ->
-                tasks.filter {
-                    return@filter it.name.startsWith(
-                        "appDistributionUpload${variant.name.toCapital()}"
-                    )
-                }.forEach {
-                    it?.dependsOn("assemble${variant.name.toCapital()}")
-                }
-            }
-            return@all true
-        }
-    }
-} else {
-    println("----- Firebase Distribution Publisher not available -----")
-}
-
 android {
 
     namespace = "com.naveenapps.expensemanager"
 
     defaultConfig {
-        applicationId = "com.naveenapps.expensemanager"
+        applicationId = "com.yueheng.ledger"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -227,10 +169,6 @@ dependencies {
     implementation(project(":feature:currency"))
     implementation(project(":feature:about"))
 
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.crashlytics)
-    implementation(libs.firebase.analytics)
-
     implementation(libs.androidx.splash.screen)
 
     implementation(libs.androidx.appcompat)
@@ -245,12 +183,4 @@ dependencies {
 
     testImplementation(project(":core:testing"))
     androidTestImplementation(project(":core:testing"))
-}
-
-fun String.toCapital(): String {
-    return this.replaceFirstChar {
-        if (it.isLowerCase()) it.titlecase(
-            Locale.getDefault()
-        ) else it.toString()
-    }
 }

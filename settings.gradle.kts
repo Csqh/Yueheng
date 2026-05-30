@@ -1,6 +1,34 @@
 pluginManagement {
     includeBuild("build-logic")
     repositories {
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/gradle-plugin")
+        maven("https://maven.aliyun.com/repository/public") {
+            content {
+                includeGroupByRegex("app\\.cash\\..*")
+                includeGroupByRegex("com\\.google\\.auto(\\..*)?")
+                includeGroup("com.google.devtools.ksp")
+                includeGroupByRegex("com\\.google\\.errorprone(\\..*)?")
+                includeGroup("com.google.guava")
+                includeGroup("com.google.j2objc")
+                includeGroup("com.google.truth")
+                includeGroup("com.intellij")
+                includeGroup("com.squareup")
+                includeGroupByRegex("commons-.*")
+                includeGroup("junit")
+                includeGroup("net.bytebuddy")
+                includeGroupByRegex("org\\.apache\\..*")
+                includeGroup("org.hamcrest")
+                includeGroup("org.jetbrains.kotlin")
+                includeGroup("org.jetbrains.kotlinx")
+                includeGroup("org.gradle.kotlin")
+                includeGroup("org.mockito")
+                includeGroup("org.objenesis")
+                includeGroup("org.robolectric")
+                includeGroup("org.checkerframework")
+                includeGroup("org.xerial")
+            }
+        }
         google()
         mavenCentral()
         gradlePluginPortal()
@@ -10,14 +38,44 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public") {
+            content {
+                includeGroupByRegex("app\\.cash\\..*")
+                includeGroupByRegex("com\\.google\\.auto(\\..*)?")
+                includeGroup("com.google.devtools.ksp")
+                includeGroupByRegex("com\\.google\\.errorprone(\\..*)?")
+                includeGroup("com.google.guava")
+                includeGroup("com.google.j2objc")
+                includeGroup("com.google.truth")
+                includeGroup("com.intellij")
+                includeGroup("com.squareup")
+                includeGroupByRegex("commons-.*")
+                includeGroup("junit")
+                includeGroup("net.bytebuddy")
+                includeGroupByRegex("org\\.apache\\..*")
+                includeGroup("org.hamcrest")
+                includeGroup("org.jetbrains.kotlin")
+                includeGroup("org.jetbrains.kotlinx")
+                includeGroup("org.gradle.kotlin")
+                includeGroup("org.mockito")
+                includeGroup("org.objenesis")
+                includeGroup("org.robolectric")
+                includeGroup("org.checkerframework")
+                includeGroup("org.xerial")
+            }
+        }
         google()
         mavenCentral()
-        maven { url = java.net.URI("https://jitpack.io") }
-        maven("https://oss.sonatype.org/content/repositories/snapshots/")
+        maven("https://jitpack.io") {
+            content {
+                includeGroupByRegex("com\\.github\\..*")
+            }
+        }
     }
 }
 
-rootProject.name = "expensemanager"
+rootProject.name = "YueHeng"
 
 include(":app")
 include(":macrobenchmark")
