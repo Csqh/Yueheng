@@ -18,44 +18,44 @@
     <string name="zero">0</string>
     <string name="plus">+</string>
 
-    <string name="unable_to_add_transaction">Unable to add transaction</string>
-    <string name="unable_to_find_transaction">Unable to find transaction</string>
-    <string name="transaction_delete_error_message">Unable to delete this transaction</string>
+    <string name="unable_to_add_transaction">无法添加账目</string>
+    <string name="unable_to_find_transaction">找不到此账目</string>
+    <string name="transaction_delete_error_message">无法删除此账目</string>
 
-    <string name="no_transactions_available">No transactions available for the selected period.\nTap + button to note your transactions</string>
-    <string name="date">Date</string>
-    <string name="notes">Notes</string>
-    <string name="expense">Expense</string>
-    <string name="income">Income</string>
-    <string name="transfer">Transfer</string>
+    <string name="no_transactions_available">所选周期暂无账目\n点击 + 记录一笔</string>
+    <string name="date">日期</string>
+    <string name="notes">备注</string>
+    <string name="expense">支出</string>
+    <string name="income">收入</string>
+    <string name="transfer">转账</string>
 
-    <string name="select_different_account">Select different account. From and To account shouldn\'t be the same.</string>
-    <string name="amount_error_message">Please enter a valid amount</string>
-    <string name="amount_should_greater_than_zero">Amount should be greater than zero</string>
-    <string name="transaction_create_success">Transaction created/updated successfully</string>
-    <string name="optional_details">Optional details</string>
-    <string name="select_account">Select Account</string>
-    <string name="select_category">Select Category</string>
-    <string name="select_date">Select Date</string>
-    <string name="select_time">Select Time</string>
+    <string name="select_different_account">请选择不同账户，转出和转入账户不能相同。</string>
+    <string name="amount_error_message">请输入有效金额</string>
+    <string name="amount_should_greater_than_zero">金额必须大于 0</string>
+    <string name="transaction_create_success">账目已保存</string>
+    <string name="optional_details">可选详情</string>
+    <string name="select_account">选择账户</string>
+    <string name="select_category">选择分类</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_time">选择时间</string>
 
-    <string name="transaction">Transaction</string>
-    <string name="clear">Clear</string>
-    <string name="cancel">Cancel</string>
-    <string name="ok">OK</string>
-    <string name="amount">Amount</string>
-    <string name="from_account">From Account</string>
-    <string name="to_account">To Account</string>
+    <string name="transaction">账目</string>
+    <string name="clear">清除</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="amount">金额</string>
+    <string name="from_account">转出账户</string>
+    <string name="to_account">转入账户</string>
 
-    <string name="edit_transaction">Edit Transaction</string>
-    <string name="create_transaction">New Transaction</string>
-    <string name="date_and_time">Date &amp; Time</string>
-    <string name="delete">Delete</string>
-    <string name="save">Save</string>
-    <string name="transaction_type">Transaction Type</string>
-    <string name="details">Details</string>
+    <string name="edit_transaction">编辑账目</string>
+    <string name="create_transaction">新增账目</string>
+    <string name="date_and_time">日期和时间</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <string name="transaction_type">账目类型</string>
+    <string name="details">详情</string>
 
-    <string name="done">Done</string>
-    <string name="backspace">Backspace</string>
-    <string name="add_transaction">Add Transaction</string>
+    <string name="done">完成</string>
+    <string name="backspace">退格</string>
+    <string name="add_transaction">添加账目</string>
 </resources>

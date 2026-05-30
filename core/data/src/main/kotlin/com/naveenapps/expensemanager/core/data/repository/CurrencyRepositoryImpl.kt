@@ -13,15 +13,15 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 
 private const val MINUS_SYMBOL = "-"
-private const val DEFAULT_CURRENCY_SYMBOL = "$"
-private const val DEFAULT_CURRENCY_CODE = "USD"
-private const val DEFAULT_CURRENCY_NAME = "US Dollars"
+private const val DEFAULT_CURRENCY_SYMBOL = "¥"
+private const val DEFAULT_CURRENCY_CODE = "CNY"
+private const val DEFAULT_CURRENCY_NAME = "人民币"
 
 @VisibleForTesting
 val defaultCurrency = Currency(
     name = DEFAULT_CURRENCY_NAME,
     symbol = DEFAULT_CURRENCY_SYMBOL,
-    position = CurrencyPosition.SUFFIX,
+    position = CurrencyPosition.PREFIX,
     code = DEFAULT_CURRENCY_CODE
 )
 

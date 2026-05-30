@@ -35,7 +35,7 @@ private val MonthAndYearFormat by lazy {
 }
 
 private val DateMonthAndYearFormat by lazy {
-    SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+    SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
 }
 
 private val DateFormat by lazy {
@@ -43,11 +43,11 @@ private val DateFormat by lazy {
 }
 
 private val DateAndMonthFormat by lazy {
-    SimpleDateFormat("dd/MM", Locale.getDefault())
+    SimpleDateFormat("MM/dd", Locale.getDefault())
 }
 
 private val ElabratedMonthDataFormat by lazy {
-    SimpleDateFormat("MMMM dd, yyyy", Locale.getDefault())
+    SimpleDateFormat("yyyy年MM月dd日", Locale.getDefault())
 }
 
 private val DayFormat by lazy {

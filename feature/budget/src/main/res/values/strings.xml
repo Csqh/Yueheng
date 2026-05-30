@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="budgets">Budgets</string>
-    <string name="no_budget_available">No budgets available\nTap + button to create new budget</string>
-    <string name="no_budget_available_short">No budgets available</string>
-    <string name="budget_name">Budget Name</string>
-    <string name="budget_delete_error_message">Budget update failed</string>
-    <string name="budget_name_error">Name shouldn\'t be empty</string>
-    <string name="budget_create_error">Unable to create/update the budget</string>
-    <string name="budget_create_success">Budget created/updated successfully</string>
-    <string name="budget_amount">Budget Amount</string>
-    <string name="budget_amount_error">Budget amount shouldn\'t be empty or zero</string>
+    <string name="budgets">预算</string>
+    <string name="no_budget_available">暂无预算\n点击 + 创建新预算</string>
+    <string name="no_budget_available_short">暂无预算</string>
+    <string name="budget_name">预算名称</string>
+    <string name="budget_delete_error_message">预算更新失败</string>
+    <string name="budget_name_error">名称不能为空</string>
+    <string name="budget_create_error">无法保存预算</string>
+    <string name="budget_create_success">预算已保存</string>
+    <string name="budget_amount">预算金额</string>
+    <string name="budget_amount_error">预算金额不能为空或为 0</string>
 
-    <string name="select_date">Select Date</string>
-    <string name="select_account">Select Account</string>
-    <string name="clear_all">Clear All</string>
-    <string name="select">Select</string>
-    <string name="select_category">Select Category</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_account">选择账户</string>
+    <string name="clear_all">清空</string>
+    <string name="select">选择</string>
+    <string name="select_category">选择分类</string>
 
-    <string name="all">All</string>
+    <string name="all">全部</string>
 
-    <string name="edit_budget">Edit Budget</string>
-    <string name="create_budget">Create Budget</string>
-    <string name="period">Period</string>
-    <string name="budget_scope">Budget Scope</string>
-    <string name="details">Details</string>
-    <string name="appearance">Appearance</string>
-    <string name="select_month">Select Month</string>
-    <string name="budget_for">Budget for</string>
-    <string name="what_is_your_budget_limit">What is your total budget limit</string>
+    <string name="edit_budget">编辑预算</string>
+    <string name="create_budget">创建预算</string>
+    <string name="period">周期</string>
+    <string name="budget_scope">预算范围</string>
+    <string name="details">详情</string>
+    <string name="appearance">外观</string>
+    <string name="select_month">选择月份</string>
+    <string name="budget_for">预算月份</string>
+    <string name="what_is_your_budget_limit">你的总预算是多少</string>
 </resources>

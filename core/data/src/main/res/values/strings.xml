@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="today">Today</string>
-    <string name="this_week">This Week</string>
-    <string name="this_month">This Month</string>
-    <string name="this_year">This Year</string>
-    <string name="all_time">All time</string>
-    <string name="custom">Custom</string>
+    <string name="today">今天</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+    <string name="this_year">今年</string>
+    <string name="all_time">全部时间</string>
+    <string name="custom">自定义</string>
 
-    <string name="amount">Amount</string>
-    <string name="category">Category</string>
-    <string name="date">Date</string>
-    <string name="notes">Notes</string>
-    <string name="average">Average</string>
-    <string name="day">Day</string>
-    <string name="week">Week</string>
-    <string name="time">Time</string>
-    <string name="month">Month</string>
-    <string name="from_account">From Account</string>
-    <string name="to_account">To Account</string>
-    <string name="transaction_type">Transaction Type</string>
+    <string name="amount">金额</string>
+    <string name="category">分类</string>
+    <string name="date">日期</string>
+    <string name="notes">备注</string>
+    <string name="average">平均</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="time">时间</string>
+    <string name="month">月</string>
+    <string name="from_account">转出账户</string>
+    <string name="to_account">转入账户</string>
+    <string name="transaction_type">账目类型</string>
 
-    <string name="light">Light</string>
-    <string name="dark">Dark</string>
-    <string name="set_by_battery_saver">Set by battery saver</string>
-    <string name="system_default">System default</string>
+    <string name="light">浅色</string>
+    <string name="dark">深色</string>
+    <string name="set_by_battery_saver">跟随省电模式</string>
+    <string name="system_default">跟随系统</string>
 </resources>

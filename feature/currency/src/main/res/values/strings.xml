@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="choose_currency">Choose Currency</string>
-    <string name="cancel">Cancel</string>
-    <string name="ok">OK</string>
-    <string name="prefix_amount">Prefix (%s500)</string>
-    <string name="suffix_amount">Suffix (500%s)</string>
-    <string name="currency">Currency</string>
-    <string name="select_currency">Select Currency</string>
-    <string name="currency_position">Currency Position</string>
-    <string name="currency_format">Currency Format</string>
-    <string name="none">None(1234.23)</string>
-    <string name="number_format">Format(1,23,423.13)</string>
+    <string name="choose_currency">选择货币</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="prefix_amount">前置（%s500）</string>
+    <string name="suffix_amount">后置（500%s）</string>
+    <string name="currency">货币</string>
+    <string name="select_currency">选择货币</string>
+    <string name="currency_position">货币位置</string>
+    <string name="currency_format">金额格式</string>
+    <string name="none">不分组（1234.23）</string>
+    <string name="number_format">千分位（123,423.13）</string>
 
 </resources>

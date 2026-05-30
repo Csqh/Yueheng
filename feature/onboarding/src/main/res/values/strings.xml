@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="welcome_message_title">Track your spending</string>
-    <string name="welcome_message_description">Be informed and have a record of your spending</string>
-    <string name="privacy_text">All of your data is stored on your device with option external backup. By continuing, you agree to our privacy policy.</string>
-    <string name="currency">Currency</string>
-    <string name="select_main_currency">Select Main Currency</string>
-    <string name="add_new">Add New</string>
-    <string name="proceed">Proceed</string>
-    <string name="get_started">Get Started</string>
-    <string name="setup">Setup App Settings</string>
-    <string name="create_new">Create New</string>
+    <string name="welcome_message_title">记录每一笔收支</string>
+    <string name="welcome_message_description">清楚掌握日常花销和收入变化</string>
+    <string name="privacy_text">你的数据会保存在本机，也可以选择外部备份。继续使用即表示你同意隐私政策。</string>
+    <string name="currency">货币</string>
+    <string name="select_main_currency">选择主货币</string>
+    <string name="add_new">新增</string>
+    <string name="proceed">继续</string>
+    <string name="get_started">开始使用</string>
+    <string name="setup">设置应用</string>
+    <string name="create_new">新建</string>
 
-    <string name="setup_description">Configure your currency and accounts to get started</string>
-    <string name="tap_to_change">Tap to change</string>
-    <string name="setup_currency">Setup the currency</string>
-    <string name="not_set_up_yet">Not set up yet</string>
+    <string name="setup_description">先设置货币和账户，马上开始记账</string>
+    <string name="tap_to_change">点击修改</string>
+    <string name="setup_currency">设置货币</string>
+    <string name="not_set_up_yet">尚未设置</string>
 
-    <string name="track">Track</string>
-    <string name="organize">Organize</string>
-    <string name="grow">Grow</string>
+    <string name="track">记录</string>
+    <string name="organize">整理</string>
+    <string name="grow">积累</string>
 </resources>

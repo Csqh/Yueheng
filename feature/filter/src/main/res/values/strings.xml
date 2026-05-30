@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="date_filter">Filter By Date</string>
-    <string name="from_date">From date</string>
-    <string name="to_date">To date</string>
-    <string name="cancel">Cancel</string>
-    <string name="select">Select</string>
-    <string name="transaction_type">Transaction Type</string>
-    <string name="accounts">Accounts</string>
-    <string name="categories">Categories</string>
-    <string name="apply">Apply</string>
-    <string name="filtered_by">Filtered by</string>
-    <string name="custom">Custom</string>
+    <string name="date_filter">按日期筛选</string>
+    <string name="from_date">开始日期</string>
+    <string name="to_date">结束日期</string>
+    <string name="cancel">取消</string>
+    <string name="select">选择</string>
+    <string name="transaction_type">账目类型</string>
+    <string name="accounts">账户</string>
+    <string name="categories">分类</string>
+    <string name="apply">应用</string>
+    <string name="filtered_by">筛选条件</string>
+    <string name="custom">自定义</string>
 
-    <string name="filters">Filters</string>
-    <string name="clear_all">Clear all</string>
+    <string name="filters">筛选</string>
+    <string name="clear_all">清空</string>
     <plurals name="filters_selected">
-        <item quantity="one">%d filter selected</item>
-        <item quantity="other">%d filters selected</item>
+        <item quantity="one">已选 %d 个筛选项</item>
+        <item quantity="other">已选 %d 个筛选项</item>
     </plurals>
 </resources>

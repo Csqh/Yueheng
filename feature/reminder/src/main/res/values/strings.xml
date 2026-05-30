@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="reminder">Reminder</string>
-    <string name="reminder_notification">Reminder Notification</string>
-    <string name="reminder_notification_message">Notification time to remind you to add your expenses</string>
-    <string name="notification_time">Reminder Notification Time</string>
-    <string name="notification_permission_message">The notification permission is important for this app. Please grant the permission.</string>
-    <string name="permission_disabled">Notification permission is disabled</string>
-    <string name="request_permission">Request permission</string>
-    <string name="open_settings">Open Settings</string>
+    <string name="reminder">提醒</string>
+    <string name="reminder_notification">记账提醒</string>
+    <string name="reminder_notification_message">到点提醒你补记当天收支</string>
+    <string name="notification_time">提醒时间</string>
+    <string name="notification_permission_message">需要通知权限才能按时提醒，请允许此权限。</string>
+    <string name="permission_disabled">通知权限已关闭</string>
+    <string name="request_permission">申请权限</string>
+    <string name="open_settings">打开设置</string>
 
-    <string name="permission_required_title">Notifications Disabled</string>
-    <string name="schedule">Schedule</string>
+    <string name="permission_required_title">通知已关闭</string>
+    <string name="schedule">计划</string>
 </resources>

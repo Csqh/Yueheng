@@ -9,11 +9,11 @@ class SaveCurrencyUseCase(
 ) {
     suspend operator fun invoke(currency: Currency): Resource<Boolean> {
         if (currency.symbol.isBlank()) {
-            return Resource.Error(Exception("Please provide valid currency symbol"))
+            return Resource.Error(Exception("请输入有效的货币符号"))
         }
 
         if (currency.name.isBlank()) {
-            return Resource.Error(Exception("Please provide valid currency name"))
+            return Resource.Error(Exception("请输入有效的货币名称"))
         }
 
         return Resource.Success(repository.saveCurrency(currency))

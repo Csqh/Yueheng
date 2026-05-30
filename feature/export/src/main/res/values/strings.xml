@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="export_error_message">Unknown error happened while exporting the file</string>
-    <string name="export_success_message">File exported successfully</string>
+    <string name="export_error_message">导出文件时出现未知错误</string>
+    <string name="export_success_message">文件已导出</string>
     <string name="csv">CSV</string>
     <string name="pdf">PDF</string>
-    <string name="share">Share</string>
-    <string name="export">Export</string>
-    <string name="select_range">Select Range</string>
-    <string name="select_account">Select Account</string>
-    <string name="export_disabled_message"><b>Note:</b> We are yet to support the PDF export feature. We will add them as soon as possible.</string>
-    <string name="all">All</string>
-    <string name="today">Today</string>
+    <string name="share">分享</string>
+    <string name="export">导出</string>
+    <string name="select_range">选择范围</string>
+    <string name="select_account">选择账户</string>
+    <string name="export_disabled_message"><b>提示：</b>PDF 导出功能暂未支持，后续会补充。</string>
+    <string name="all">全部</string>
+    <string name="today">今天</string>
 </resources>

@@ -87,7 +87,7 @@ internal fun CountryCurrencyListAndSearchView(
             // Results count
             if (countryState.searchText.value.isNotBlank()) {
                 Text(
-                    text = "${countryState.countries.size} results found",
+                    text = "找到 ${countryState.countries.size} 个结果",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
@@ -141,7 +141,7 @@ internal fun CountrySearchView(
                         ) {
                             Icon(
                                 imageVector = Icons.Default.Close,
-                                contentDescription = "Clear search"
+                                contentDescription = "清除搜索"
                             )
                         }
                     }
@@ -162,7 +162,7 @@ internal fun CountrySearchView(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                    contentDescription = "Back"
+                    contentDescription = "返回"
                 )
             }
         },
@@ -195,7 +195,7 @@ internal fun CountryCurrencyListView(
                     tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
                 )
                 Text(
-                    text = "No countries found",
+                    text = "没有找到国家或地区",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

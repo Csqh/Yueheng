@@ -222,7 +222,7 @@ fun BudgetItem(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
-                    text = "${transactionAmount?.amountString ?: "—"} of ${amount?.amountString ?: "—"}",
+                    text = "${transactionAmount?.amountString ?: "—"} / ${amount?.amountString ?: "—"}",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                         .copy(alpha = 0.6f),
@@ -315,7 +315,7 @@ fun DashBoardBudgetItem(
 
                 // "of $amount" — smaller, muted, baseline-aligned
                 Text(
-                    text = " of ${amount ?: "—"}",
+                    text = " / ${amount ?: "—"}",
                     style = MaterialTheme.typography.bodySmall.copy(
                         fontWeight = FontWeight.Normal,
                     ),
